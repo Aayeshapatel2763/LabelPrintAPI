@@ -1,0 +1,44 @@
+# VS Code directories
+.vscode/
+.vs/
+.vs/LabelPrintAPI
+.idea
+
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Configuration files containing sensitive data
+
+appsettings.json
+appsettings.Development.json
+
+# Configuration
+*.env
+
+# File-based packages
+*.tar.gz
+*.nupkg
+*.snupkg
+*.pdb
+
+# Debug folder
+debug/
+release/
+releases/
+artifacts/
+out/
+build/
+publish/
+Logs/*.txt
+
+.fake
+
+
