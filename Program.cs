@@ -1,9 +1,15 @@
+using LabelPrintAPI.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+// Inject IConfiguration (appsettings.json)
+builder.Services.Configure<ConnectionStrings>(builder.Configuration.GetSection("ConnectionStrings"));
 
 // Add CORS Policy
 builder.Services.AddCors(options =>
